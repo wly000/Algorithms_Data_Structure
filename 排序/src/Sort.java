@@ -11,13 +11,13 @@ public class Sort {
 
         //待排序数组
         //double[] arr = {45,2.1,3,67,21,90,20,13,45,23,12,34,56,78,90,0,1,2,3,1,2,9,7,8,4,6};
-//        int len = 10000;
-//        double[] arr = new double[len];
-//        for (int i = 0; i < len; i++) {
-//            Random random = new Random(i);
-//            arr[i] = random.nextDouble();
-//        }
-        double[] arr = {2,3,4,6,1,9,2,1,5,7,3};
+        int len = 10000;
+        double[] arr = new double[len];
+        for (int i = 0; i < len; i++) {
+            Random random = new Random(i);
+            arr[i] = random.nextDouble();
+        }
+        //double[] arr = {2,3,4,6,1,9,2,1,5,7,3};
         long startTime = System.nanoTime();
         heapSort(arr);
         long endTime = System.nanoTime();
